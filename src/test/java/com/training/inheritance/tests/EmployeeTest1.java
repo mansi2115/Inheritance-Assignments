@@ -85,7 +85,7 @@ public class EmployeeTest1 {
 	 */
 	@Test(expected= InvalidInputException.class)
 	public void testGetEmployeeDetailsWithEmptyName() throws InvalidInputException {
-		marketingExecutive= new MarketingExecutive(102,"XYZ",50000,5);
+		marketingExecutive= new MarketingExecutive(102," ",50000,5);
 		Employee.showDetails(marketingExecutive);
 	}
 
